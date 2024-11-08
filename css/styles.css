@@ -217,3 +217,37 @@ button:focus {
         font-size: 2em;
     }
 }
+/* Specific styles for Project 4 */
+.project-4 {
+    background-color: #ffebee; /* Light red background to give it a distinct style */
+    border: 2px solid #e57373; /* Border color to match the theme */
+    box-shadow: 0 6px 16px rgba(229, 115, 115, 0.5); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-4:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(229, 115, 115, 0.7); /* Enhanced shadow on hover */
+}
+
+.project-4 h2 {
+    color: #d32f2f; /* Darker red for the title */
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.project-4 img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft image shadow */
+}
+
+.project-4 p {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 15px;
+    color: #444; /* Dark gray text */
+}

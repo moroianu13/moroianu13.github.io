@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Foreign Population and Crime in Berlin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Analysis of Foreign Population and Crime in Berlin</h1>
+        <p>Prepared by: Adrian Moroianu | Date: 11/8/2024</p>
+        
+        <!-- Buttons in the header -->
+        <div class="header-buttons">
+            <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/App_ws_Webpages'">GitHub Repo</button>
+            <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
+        </div>
+    </header>
+
+    <div class="project project-4">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This analysis explores potential correlations between the presence of foreign population groups and crime metrics across Berlin boroughs. The study investigates specific foreign groups, such as Turkish, Polish, Russian, and Syrian populations, and examines various crime metrics, including total crimes, robbery, assault, theft, and vandalism.</p>
+        </section>
+
+        <section id="key-findings">
+            <h2>Key Findings</h2>
+            
+            <h3>1. Correlation Between Population and Crime</h3>
+            <img src="img\foreing_population_vs_crime\population_vs_crime_correlation.png" alt="Correlation Between Population and Crime">
+            <p>This heatmap shows the correlation between the total population and total crime counts.</p>
+            <p><strong>Observation:</strong> There is a minimal correlation (0.056) between population size and crime, suggesting that overall population size alone is not a strong predictor of crime rates.</p>
+            
+            <h3>2. Clustering of Boroughs Based on Population and Crime</h3>
+            <img src="img\foreing_population_vs_crime\clustering_population_crime.png" alt="Clustering of Boroughs Based on Population and Crime">
+            <p>Boroughs are grouped into clusters based on similarities in population size and crime levels.</p>
+            <p><strong>Observation:</strong> The clusters suggest that boroughs with similar characteristics in population and crime metrics can be grouped together, although this clustering does not indicate causation.</p>
+            
+            <h3>3. Age Group Analysis Across Clusters</h3>
+            <img src="img\foreing_population_vs_crime\age_group_distribution_across_clusters.png" alt="Age Group Distribution Across Clusters">
+            <p>Box plots showing the distribution of various age groups across different clusters.</p>
+            <p><strong>Observation:</strong> Cluster differences can be observed in certain age groups, particularly in the younger and middle-age demographics, potentially indicating age-related trends in crime rates.</p>
+            
+            <h3>4. Foreign Population and Crime Correlation Matrix</h3>
+            <img src="img\foreing_population_vs_crime\foreign_population_crime_correlation.png" alt="Correlation Between Foreign Population and Crime Metrics">
+            <p>This matrix provides correlations between specific foreign population groups and different types of crime.</p>
+            <p><strong>Key Findings:</strong></p>
+            <ul>
+                <li><strong>Turkey:</strong> Moderate correlation with total crimes (0.26) and robbery (0.29).</li>
+                <li><strong>Syria:</strong> Shows a moderate correlation with overall crime (0.26) and assault (0.25).</li>
+                <li><strong>Poland and Russia:</strong> Show lower correlations with crime metrics, suggesting a lesser direct impact on crime rates.</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>This analysis reveals some interesting insights regarding the foreign population and crime in Berlin:</p>
+            <ul>
+                <li>There is a low overall correlation between population size and crime.</li>
+                <li>Foreign populations from specific regions, such as Turkey and Syria, exhibit a moderate correlation with certain crime types.</li>
+                <li>Clustering indicates that certain boroughs share similar patterns in population and crime, but further investigation is needed to understand the underlying factors.</li>
+            </ul>
+            <p>This analysis could benefit from additional time-series data to observe changes in trends over time, as well as more granular data on socioeconomic factors, which may play a significant role in explaining these patterns.</p>
+        </section>
+    </div>
+</body>
+</html>
