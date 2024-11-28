@@ -251,3 +251,39 @@ button:focus {
     font-size: 15px;
     color: #444; /* Dark gray text */
 }
+
+
+/* Specific styles for Project 5 */
+.project-5 {
+    background-color: #c8e6c9; /* Light green background for a fresh look */
+    border: 2px solid #66bb6a; /* Border color to match the green theme */
+    box-shadow: 0 6px 16px rgba(102, 187, 106, 0.5); /* Soft green shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-5:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(102, 187, 106, 0.7); /* Enhanced shadow on hover */
+}
+
+.project-5 h2 {
+    color: #388e3c; /* Dark green for the title */
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.project-5 img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft image shadow */
+}
+
+.project-5 p {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 15px;
+    color: #444; /* Dark gray text */
+}

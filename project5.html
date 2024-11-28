@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin Borough Lifestyle Analysis</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Berlin Borough Lifestyle Analysis</h1>
+        <p>Prepared by: Adrian Moroianu | Date: 11/28/2024</p>
+        <!-- Buttons in the header -->
+        <div class="header-buttons">
+            <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/berlin_borough_lifestyle'">GitHub Repo</button>
+
+            <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
+        </div>
+    </header>
+
+    <div class="project project-5">
+        <section id="introduction">
+            <h1>Berlin Borough Lifestyle Analysis</h1>
+            <p>An analysis of amenities, demographics, and crime data in Berlin.</p>
+
+         <!-- Borough Names Table -->
+         <section id="borough-names">
+            <h2>Borough IDs and Names</h2>
+            <p>The table below maps the borough IDs to their respective names for easy reference throughout the analysis.</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Borough ID</th>
+                        <th>Borough Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Spandau</td></tr>
+                    <tr><td>2</td><td>Mitte</td></tr>
+                    <tr><td>3</td><td>Friedrichshain-Kreuzberg</td></tr>
+                    <tr><td>4</td><td>Charlottenburg-Wilmersdorf</td></tr>
+                    <tr><td>5</td><td>Steglitz-Zehlendorf</td></tr>
+                    <tr><td>6</td><td>Tempelhof-Schöneberg</td></tr>
+                    <tr><td>7</td><td>Neukölln</td></tr>
+                    <tr><td>8</td><td>Treptow-Köpenick</td></tr>
+                    <tr><td>9</td><td>Marzahn-Hellersdorf</td></tr>
+                    <tr><td>10</td><td>Lichtenberg</td></tr>
+                    <tr><td>11</td><td>Reinickendorf</td></tr>
+                    <tr><td>12</td><td>Pankow</td></tr>
+                </tbody>
+            </table>
+        </section>    
+
+        <section id="borough-scores">
+                <h2>Berlin Borough Amenity Scores</h2>
+                <p>
+                    The borough scores (normalized on a 0–10 scale) indicate key differences:
+                </p>
+                <ul>
+                    <li>Borough 2 (Mitte) leads in Nightlife and Cultural Scores.</li>
+                    <li>Borough 1 (Spandau) excels in Family and Pet-friendliness.</li>
+                    <li>Borough Reinickendorf stands out for Pet-friendliness.</li>
+                </ul>
+                <img src="img\berlin_borough_life_style\Berlin_Boroughs_Amenity_Scores.png" alt="Berlin Borough Amenity Scores">
+        </section>    
+        
+
+        <section id="amenity-correlation">
+                <h2>Correlation Between Amenity Categories</h2>
+                <p>
+                    The analysis of amenity categories reveals strong relationships between certain lifestyle scores:
+                </p>
+                <ul>
+                    <li>Nightlife and Cultural Scores have a strong positive correlation (0.88).</li>
+                    <li>Family and Pet Scores show no direct correlation with other categories.</li>
+                </ul>
+                <img src="img\berlin_borough_life_style\Correlation_between_Different_Amenity_Categories.png" alt="Correlation Between Amenity Categories">
+        </section>
+
+
+        <section id="age-correlation">
+            <h2>Correlation Between Age Groups and Lifestyle Scores</h2>
+            <p>
+                Demographics influence lifestyle preferences:
+            </p>
+            <ul>
+                <li>Younger populations (18–27) are strongly correlated with Nightlife and Cultural Scores (0.89).</li>
+                <li>Families with children (under 6) prefer Family and Pet-friendly amenities (0.58).</li>
+            </ul>
+            <img src="img\berlin_borough_life_style\Correlatio_Between_Age_Groups_Scores.png" alt="Correlation Between Age Groups and Lifestyle Scores">
+        </section>
+
+
+        <section id="crime-correlation">
+                <h2>Correlation Between Crime Data and Lifestyle Scores</h2>
+                <p>
+                    Crime data significantly impacts some lifestyle scores:
+                </p>
+                <ul>
+                    <li>Nightlife and Cultural Scores correlate strongly with total crimes and assaults.</li>
+                    <li>Family and Pet Scores show a weak negative correlation with residential burglary (-0.49).</li>
+                </ul>
+                <img src="img\berlin_borough_life_style\Correlation_Betwen_Crime_Data_Lifestyle_Scores.png" alt="Correlation Between Crime Data and Lifestyle Scores">
+        </section>
+
+
+       
+
+         <section id="conclusions">
+            <h2>Conclusions</h2>
+            <p>
+                Based on the analysis, we can draw the following key insights:
+            </p>
+            <ul>
+                <li><strong>Amenity Correlations:</strong>
+                    <ul>
+                        <li>Nightlife and Cultural Scores are strongly related, thriving in activity hubs like Mitte.</li>
+                        <li>Family and Pet-friendly Scores are distinct from nightlife and cultural offerings.</li>
+                    </ul>
+                </li>
+                <li><strong>Crime and Lifestyle Correlations:</strong>
+                    <ul>
+                        <li>High crime levels impact Nightlife and Cultural Scores due to increased activity and footfall.</li>
+                        <li>Family-friendly areas are safer, with fewer residential burglaries (-0.49 correlation).</li>
+                    </ul>
+                </li>
+                <li><strong>Demographics and Preferences:</strong>
+                    <ul>
+                        <li>Younger populations (18–27) prefer boroughs with vibrant nightlife and cultural amenities.</li>
+                        <li>Families with young children (under 6) favor boroughs with parks, schools, and playgrounds.</li>
+                    </ul>
+                </li>
+                <li><strong>Recommendations:</strong>
+                    <ul>
+                        <li>Invest in safety for high-activity boroughs like Mitte to attract diverse residents.</li>
+                        <li>Expand family-friendly infrastructure in boroughs with high family demographics.</li>
+                        <li>Enhance cultural and nightlife opportunities in underperforming boroughs like Borough Reinickendorf.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Berlin Borough Lifestyle Analysis</p>
+    </footer>
+</body>
+</html>
