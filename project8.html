@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Cost Predictor - Machine Learning Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>💰 Insurance Cost Predictor</h1>
+        <p>Created by: Adrian Moroianu | Date: 03/24/2025</p>
+
+        <div class="header-buttons">
+            <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
+            <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/insurance-cost-predictor'">GitHub Repo</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>📌 Project Overview</h2>
+            <p>
+                This machine learning project predicts <strong>medical insurance costs</strong> based on user input features like <strong>age, BMI, smoker status, children, sex, and region</strong>. It includes an interactive <strong>Streamlit web app</strong> with a clean UI, dark theme, and live visualizations.
+            </p>
+            <a class="demo-link" href="https://insurance-cost-predictor-hull4abjduw75jhzfiruep.streamlit.app/" target="_blank">🔗 Live Demo</a>
+        </section>
+
+        <section id="dataset">
+            <h2>📊 Dataset</h2>
+            <p>The dataset used includes over 2,700 real-world records with health-related attributes and insurance charges. Data was cleaned and processed for regression modeling.</p>
+        </section>
+
+        <section id="technical-stack">
+            <h2>🛠️ Technical Stack</h2>
+            <ul>
+                <li>🐍 Python (Scikit-Learn, Pandas, NumPy)</li>
+                <li>📈 Polynomial Regression Model (degree=2)</li>
+                <li>🌐 Streamlit (Frontend & Backend UI)</li>
+                <li>📉 Feature Engineering + One-hot Encoding + Scaling</li>
+            </ul>
+        </section>
+
+        <section id="how-it-works">
+            <h2>⚙️ How It Works</h2>
+            <ol>
+                <li>🔍 <strong>Data Analysis</strong>: Identified high-impact features (e.g., smoker status, age, BMI).</li>
+                <li>🧹 <strong>Data Cleaning</strong>: Handled missing values and inconsistent encodings.</li>
+                <li>🧠 <strong>Model Training</strong>: Trained a pipeline with polynomial features + linear regression.</li>
+                <li>🖥️ <strong>Deployment</strong>: Deployed via Streamlit Cloud with live charts, CSV uploads, and session tracking.</li>
+            </ol>
+        </section>
+
+        <section id="installation">
+            <h2>🚀 How to Run Locally</h2>
+            <p>To run this project on your local machine:</p>
+            <pre><code>
+# Clone the repository
+git clone https://github.com/moroianu13/insurance-cost-predictor.git
+cd insurance-cost-predictor
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run insurance_app.py
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Insurance Cost Predictor | Created by Adrian Moroianu</p>
+    </footer>
+</body>
+</html>
