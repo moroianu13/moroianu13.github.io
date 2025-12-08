@@ -3,62 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berlin Capstone Project - Adrian Moroianu</title>
+    <title>Berlin RentWise - Adrian Moroianu</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Berlin Capstone Project</h1>
-        <p>A Comprehensive Data-Driven Exploration of Berlin's Neighborhoods</p>
-        <p>Prepared by: Adrian Moroianu | Date: 4/20/2024</p>
+        <h1>🏙️ Berlin RentWise</h1>
+        <p>A Comprehensive Full-Stack Web Application for Berlin Neighborhood Exploration</p>
+        <p>Prepared by: Adrian Moroianu | Updated: December 2025</p>
 
         <!-- Buttons in the header -->
         <div class="header-buttons">
             <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
             <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
             <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/Berlin_capstone_project'">GitHub Repo</button>
+            <button class="header-btn" onclick="window.location.href='https://berlin-rentwise.fly.dev/'">🚀 Live Demo</button>
         </div>
     </header>
 
     <div class="project project-1">
         <h2>Overview</h2>
         <p>
-            This project delves into the characteristics of various neighborhoods in Berlin, offering a data-driven approach to understanding the city’s dynamics. The analysis focuses on several critical factors, such as rent affordability, crime rates, demographics, and lifestyle preferences. 
-            By providing visual insights and interactive filtering, users can explore neighborhoods based on attributes like family-friendliness, nightlife, or green spaces, making this project a valuable tool for those considering relocating or investing in the city.
+            Berlin RentWise is a production-ready Django web application deployed on Fly.io that helps users explore 447 Berlin neighborhoods across 12 boroughs. 
+            The platform combines interactive data visualization, REST API endpoints, and an AI-powered chatbot using Google Gemini to provide comprehensive insights 
+            into rental prices, crime statistics, amenities, and lifestyle preferences. With automated CI/CD pipelines and a robust PostgreSQL backend, this project 
+            demonstrates full-stack development expertise from data processing to cloud deployment.
         </p>
 
-        <h2>Key Features</h2>
-        <p>
-            The project highlights key aspects that influence quality of life in Berlin’s neighborhoods:
-            <ul>
-                <li><strong>Rent Affordability:</strong> Explore how rents vary across neighborhoods, helping potential residents find areas that fit their budget.</li>
-                <li><strong>Crime Rates:</strong> Gain insights into the safety of different boroughs and neighborhoods with detailed crime statistics.</li>
-                <li><strong>Demographics:</strong> Understand the population composition in terms of age, family structures, and foreign residents in various neighborhoods.</li>
-                <li><strong>Lifestyle Filters:</strong> Use interactive filters to focus on specific neighborhood characteristics such as green spaces, cultural hotspots, and family-oriented amenities.</li>
-            </ul>
-        </p>
+        <h2>✨ Key Features</h2>
+        <h3>Core Functionality</h3>
+        <ul>
+            <li><strong>Neighborhood Explorer:</strong> Browse 447 neighborhoods with detailed information including rental prices, crime data, and amenities</li>
+            <li><strong>Borough Insights:</strong> Explore 12 Berlin boroughs with geographic data and interactive maps</li>
+            <li><strong>Advanced Filtering:</strong> Search by price range, crime rate, lifestyle preferences, and family-friendliness</li>
+            <li><strong>Statistical Insights:</strong> Rental trends and neighborhood comparisons with Chart.js visualizations</li>
+        </ul>
 
-        <h2>Technologies Used</h2>
-        <p><strong>Tech Stack:</strong> Python, Django, PostgreSQL, Matplotlib, Plotly, Docker</p>
+        <h3>AI Chatbot</h3>
+        <ul>
+            <li><strong>Google Gemini Integration:</strong> Natural language conversation powered by AI</li>
+            <li><strong>Multi-tier Response System:</strong>
+                <ul>
+                    <li>Dialog pattern matching (YAML-based)</li>
+                    <li>Predefined factual responses (fuzzy matching)</li>
+                    <li>Live weather API integration</li>
+                    <li>AI-generated responses (Google Gemini Flash)</li>
+                    <li>Wikipedia knowledge base</li>
+                    <li>Fallback fun facts</li>
+                </ul>
+            </li>
+            <li><strong>Conversation History:</strong> Maintains session-based chat context</li>
+            <li><strong>Berlin-specific Knowledge:</strong> Specialized responses about Berlin neighborhoods</li>
+        </ul>
+
+        <h3>Data & Analytics</h3>
+        <ul>
+            <li><strong>Interactive Maps:</strong> GeoJSON-based neighborhood boundaries with Leaflet.js</li>
+            <li><strong>REST API:</strong> Full CRUD operations for all data models</li>
+            <li><strong>Advanced Filtering:</strong> Search by price range, crime rate, amenities</li>
+            <li><strong>Statistical Insights:</strong> Rental trends and neighborhood comparisons</li>
+        </ul>
+
+        <h2>🛠️ Technology Stack</h2>
+        
+        <h3>Backend</h3>
+        <p><strong>Framework & Database:</strong></p>
+        <ul>
+            <li>Django 5.2.9 - Web framework</li>
+            <li>Django REST Framework 3.16.1 - API development</li>
+            <li>PostgreSQL 15 - Primary database</li>
+            <li>Gunicorn 23.0.0 - WSGI HTTP server</li>
+        </ul>
+        
+        <h3>AI & External APIs</h3>
+        <ul>
+            <li>Google Gemini API (google-generativeai 0.8.3) - AI chatbot</li>
+            <li>OpenWeatherMap API - Live weather data</li>
+            <li>Wikipedia API - Knowledge base integration</li>
+        </ul>
+        
+        <h3>Data Processing</h3>
+        <ul>
+            <li>GeoPandas 1.1.1 - Geographic data manipulation</li>
+            <li>Pandas 2.3.3 - Data analysis</li>
+            <li>NumPy 2.2.6 - Numerical computing</li>
+            <li>PyProj 3.7.1 - Cartographic projections</li>
+        </ul>
+        
+        <h3>Frontend</h3>
+        <ul>
+            <li>Bootstrap 5 - UI framework</li>
+            <li>Leaflet.js - Interactive maps</li>
+            <li>Chart.js - Data visualization</li>
+            <li>AJAX - Asynchronous API calls</li>
+            <li>Jinja2 3.1.6 - Template engine</li>
+        </ul>
+        
+        <h3>DevOps & Deployment</h3>
+        <ul>
+            <li>Fly.io - Production hosting (Frankfurt region)</li>
+            <li>Docker - Containerization</li>
+            <li>WhiteNoise 6.8.2 - Static file serving</li>
+            <li>GitHub Actions - CI/CD automation</li>
+        </ul>
+
+        <h3>Testing & Quality</h3>
+        <ul>
+            <li>Django TestCase - Unit & integration tests (44 tests)</li>
+            <li>unittest.mock - Test mocking</li>
+            <li>PostgreSQL Test Database - Isolated test environment</li>
+        </ul>
+
+        <h3>Development Tools</h3>
+        <ul>
+            <li>python-dotenv 1.2.1 - Environment variable management</li>
+            <li>drf-yasg 1.21.11 - API documentation (Swagger/OpenAPI)</li>
+            <li>BeautifulSoup4 4.14.3 - HTML parsing</li>
+            <li>FuzzyWuzzy 0.18.0 - Fuzzy string matching</li>
+        </ul>
+
+        <h2>🏗️ Architecture</h2>
+        <h3>System Design</h3>
+        <p>The application follows a modern CI/CD workflow:</p>
+        <ol>
+            <li><strong>GitHub Repo</strong> → Push to main branch</li>
+            <li><strong>GitHub Actions</strong> → Run Django CI tests with PostgreSQL</li>
+            <li><strong>Fly Deploy</strong> → Automated deployment (if tests pass)</li>
+            <li><strong>Fly.io Production</strong> → Gunicorn, PostgreSQL, Auto-scaling</li>
+            <li><strong>External APIs</strong> → Gemini AI, Weather API, Wikipedia</li>
+        </ol>
+
+        <h3>Application Flow</h3>
+        <ol>
+            <li><strong>User Request</strong> → Nginx/Fly.io proxy → Gunicorn</li>
+            <li><strong>Django Views</strong> → Process request → Query PostgreSQL</li>
+            <li><strong>Chatbot Request</strong> → Dialog matching → Predefined responses → AI API</li>
+            <li><strong>API Calls</strong> → DRF ViewSets → Serializers → JSON response</li>
+            <li><strong>Static Files</strong> → WhiteNoise → Cached & compressed</li>
+        </ol>
+
+        <h2>🔄 CI/CD Pipeline</h2>
+        <h3>Automated Workflow</h3>
+        <ol>
+            <li><strong>Push to main</strong> → Triggers GitHub Actions</li>
+            <li><strong>Django CI</strong> (.github/workflows/django.yml)
+                <ul>
+                    <li>Set up Python 3.10</li>
+                    <li>Install dependencies</li>
+                    <li>Create test database (PostgreSQL 14)</li>
+                    <li>Run 44 unit/integration tests</li>
+                    <li>✅ Pass → Trigger deployment</li>
+                    <li>❌ Fail → Block deployment</li>
+                </ul>
+            </li>
+            <li><strong>Fly Deploy</strong> (.github/workflows/fly-deploy.yml)
+                <ul>
+                    <li>Only runs if CI passes</li>
+                    <li>Checkout code</li>
+                    <li>Deploy to Fly.io</li>
+                    <li>Run migrations</li>
+                    <li>Restart application</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>📚 API Documentation</h2>
+        <h3>REST Endpoints</h3>
+        <p><strong>Neighborhoods</strong></p>
+        <ul>
+            <li>GET /api/neighborhoods/ - List all neighborhoods</li>
+            <li>POST /api/neighborhoods/ - Create neighborhood</li>
+            <li>GET /api/neighborhoods/{id}/ - Retrieve neighborhood</li>
+            <li>PUT /api/neighborhoods/{id}/ - Update neighborhood</li>
+            <li>DELETE /api/neighborhoods/{id}/ - Delete neighborhood</li>
+        </ul>
+
+        <p><strong>Boroughs</strong></p>
+        <ul>
+            <li>GET /api/boroughs/ - List all boroughs</li>
+            <li>POST /api/boroughs/ - Create borough</li>
+            <li>GET /api/boroughs/{id}/ - Retrieve borough</li>
+            <li>PUT /api/boroughs/{id}/ - Update borough</li>
+            <li>DELETE /api/boroughs/{id}/ - Delete borough</li>
+        </ul>
+
+        <p><strong>Chat</strong></p>
+        <ul>
+            <li>POST /chat/ - Send chat message</li>
+            <li>Body: {"message": "Your question here"}</li>
+            <li>Response: {"response": "AI/bot response"}</li>
+        </ul>
+
+        <h3>Swagger Documentation</h3>
+        <p>Access interactive API docs at: <a href="https://berlin-rentwise.fly.dev/swagger/" target="_blank">https://berlin-rentwise.fly.dev/swagger/</a></p>
+
+        <h2>🌐 Deployment</h2>
+        <h3>Production Configuration</h3>
+        <ul>
+            <li><strong>Platform:</strong> Fly.io</li>
+            <li><strong>Region:</strong> Frankfurt (fra) - closest to Berlin</li>
+            <li><strong>Resources:</strong> 512MB RAM, 1 shared CPU</li>
+            <li><strong>Database:</strong> Fly PostgreSQL with pgbouncer</li>
+            <li><strong>Scaling:</strong> Auto-stop/start enabled for cost optimization</li>
+            <li><strong>Health Checks:</strong> Automatic HTTP health monitoring</li>
+        </ul>
+
+        <h2>🧪 Testing</h2>
+        <p><strong>Test Coverage:</strong> 44 total tests covering:</p>
+        <ul>
+            <li>Model operations (CRUD)</li>
+            <li>API endpoints (ViewSets)</li>
+            <li>Chat functionality</li>
+            <li>Authentication & permissions</li>
+            <li>Data validation</li>
+            <li>Edge cases & error handling</li>
+        </ul>
 
         <h2>Visuals and User Interface</h2>
         <p>The project integrates several interactive and static visual elements to enhance the user experience:</p>
         
-        <img src="img/berlin_project/home_page.png" alt="Screenshot of Berlin Capstone Project Home Page" />
-        <p>The home page offers a comprehensive overview of all available neighborhoods, allowing users to easily navigate and explore the city of Berlin.</p>
+        <img src="img/berlin_project/home_page.png" alt="Screenshot of Berlin RentWise Home Page" />
+        <p>The home page offers a comprehensive overview of all available neighborhoods with the Berlin RentWise branding, allowing users to easily navigate and explore the city of Berlin.</p>
 
         <img src="img/berlin_project/borough_page.png" alt="Screenshot of Borough Filter Page" />
         <img src="img/berlin_project/borough_page1.png" alt="Screenshot of Borough Filter Page" />
-        <p>The borough filter page empowers users to search neighborhoods based on affordability, lifestyle, and family preferences, providing them with personalized recommendations.</p>
+        <p>The borough filter page empowers users to search neighborhoods based on affordability, lifestyle, and family preferences with interactive filtering options and real-time data updates.</p>
 
         <img src="img/berlin_project/neighborhoods.png" alt="Screenshot of Neighborhoods Page" />
         <img src="img/berlin_project/neighborhoods1.png" alt="Screenshot of Neighborhoods Page" />
-        <p>The neighborhoods list page provides a complete list of all available neighborhoods, with the ability to sort and filter according to various lifestyle criteria.</p>
+        <p>The neighborhoods list page provides a complete list with interactive maps powered by Leaflet.js, displaying GeoJSON boundaries and detailed statistics for each area.</p>
 
         <img src="img/berlin_project/neighborhoods_detail.png" alt="Screenshot of Neighborhood Detail Page" />
         <img src="img/berlin_project/neighborhoods_detail1.png" alt="Screenshot of Neighborhood Detail Page" />
         <img src="img/berlin_project/neighborhoods_detail2.png" alt="Screenshot of Neighborhood Detail Page" />
-        <p>The neighborhood detail page offers an in-depth look at each neighborhood, with detailed data visualizations on rent prices, amenities, crime statistics, and demographics. This page serves as a one-stop guide for anyone wanting to learn more about a specific neighborhood.</p>
+        <p>The neighborhood detail page offers an in-depth look at each neighborhood with Chart.js visualizations for rent prices, amenities, crime statistics, and demographics. Features the AI chatbot (Berlin Bear icon) for interactive assistance.</p>
+
+        <h2>🚀 Live Demo</h2>
+        <p>Experience the application live at: <a href="https://berlin-rentwise.fly.dev/" target="_blank">https://berlin-rentwise.fly.dev/</a></p>
+
+        <h2>📈 Project Highlights</h2>
+        <ul>
+            <li>✅ Production deployment on Fly.io with 99.9% uptime</li>
+            <li>✅ Automated CI/CD pipeline with GitHub Actions</li>
+            <li>✅ 44 comprehensive tests ensuring code quality</li>
+            <li>✅ RESTful API with Swagger documentation</li>
+            <li>✅ AI-powered chatbot with Google Gemini integration</li>
+            <li>✅ Interactive maps with 447 neighborhoods and 12 boroughs</li>
+            <li>✅ Real-time weather data integration</li>
+            <li>✅ Docker containerization for consistent environments</li>
+        </ul>
     </div>
 </body>
 </html>
