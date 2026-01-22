@@ -1,167 +1,195 @@
-# 🚀 Adrian Moroianu's Portfolio
+# 🚀 Adrian Moroianu
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://moroianu13.github.io/)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-green?style=for-the-badge&logo=github)](https://github.com/moroianu13/moroianu13.github.io)
 
-> A modern, professional portfolio showcasing my journey from Land Surveying to Data Analysis & Machine Learning Engineering
+> **Applied Data Scientist | Machine Learning Engineer | Data Engineer**  
+> Building end-to-end ML systems and data pipelines that drive business impact
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=flat-square)
 ![Built with](https://img.shields.io/badge/Built%20with-HTML%20%7C%20CSS%20%7C%20JavaScript-orange?style=flat-square)
 
 ---
 
-## 🌟 Features
+## 🌟 What I Do
 
-### ✨ Modern Design
-- **Gradient Backgrounds** - Beautiful purple/blue color schemes
-- **Smooth Animations** - Fade-in, slide-in, and hover effects
-- **Glass-morphism UI** - Modern blur effects on navigation
-- **Responsive Design** - Looks great on all devices
+### 🔬 Machine Learning Engineering
+- Design and deploy production ML models for real-world problems
+- Build automated training pipelines with MLOps best practices
+- Implement model monitoring, versioning, and A/B testing frameworks
 
-### 🎯 Interactive Elements
-- **Sticky Navigation** - Smooth scroll with dynamic effects
-- **Animated Hero Section** - Waving emoji and gradient text
-- **Hover Animations** - Cards lift and transform on interaction
-- **Interactive Skill Tags** - Color-changing skill badges
-- **Social Media Integration** - Quick links to GitHub, LinkedIn, Email
+### 🏗️ Data Engineering
+- Architect scalable ETL/ELT pipelines for high-volume data processing
+- Design data warehouses and optimize query performance
+- Automate data quality checks and validation workflows
 
-### 📱 Sections
-1. **Hero** - Professional introduction with profile card
-2. **About** - Journey cards highlighting my career transition
-3. **Skills** - Categorized technical skills (Backend, Data & ML, Frontend, AI & Cloud)
-4. **Projects** - Featured work with dedicated project pages
-5. **Contact** - Beautiful contact cards with icons
+### 🚀 Full-Stack ML Systems
+- End-to-end ownership: from data ingestion to model deployment
+- REST APIs, microservices, and cloud-native architectures
+- CI/CD pipelines with automated testing and monitoring
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technical Stack
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS variables, Grid, Flexbox
-- **JavaScript** - Smooth scrolling and interactive features
-- **Font Awesome** - Professional icons
-- **Google Fonts** - Inter & Poppins typography
+### Data Engineering & Processing
+- **Languages**: Python, SQL, Bash
+- **Data Processing**: Pandas, NumPy, Polars, Apache Spark
+- **Databases**: PostgreSQL, SQLite, BigQuery
+- **Workflow Orchestration**: Airflow, Prefect
+
+### Machine Learning & AI
+- **Frameworks**: Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM
+- **MLOps**: MLflow, DVC, Weights & Biases
+- **NLP & LLMs**: OpenAI API, Google Gemini, Hugging Face Transformers
+- **Model Deployment**: FastAPI, Flask, Docker, Kubernetes
+
+### Backend & Infrastructure
+- **Web Frameworks**: Django, Flask, FastAPI
+- **API Design**: REST, GraphQL
+- **Containerization**: Docker, Docker Compose
+- **Cloud Platforms**: AWS, GCP, Fly.io
+- **CI/CD**: GitHub Actions, GitLab CI
+
+### Tools & Practices
+- **Version Control**: Git, GitHub, GitLab
+- **Testing**: Pytest, Unittest, Integration Testing
+- **Monitoring**: Prometheus, Grafana, Sentry
+- **Documentation**: Sphinx, MkDocs, OpenAPI/Swagger
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```
 moroianu13.github.io/
-├── index.html              # Main landing page
-├── projects.html           # Projects overview
-├── project1.html           # Berlin RentWise - Django/AI App
-├── project2.html           # Investment Portfolio Analysis
+├── index.html              # Portfolio landing page
+├── projects.html           # Projects showcase
+├── project1.html           # Berlin RentWise - Full-stack Django + AI
+├── project2.html           # Investment Portfolio Optimization
 ├── project3.html           # Web vs App Usage Analysis
-├── project4.html           # Foreign Population & Crime Analysis
-├── project5.html           # Berlin Borough Lifestyle Analysis
+├── project4.html           # Crime & Demographics Study
+├── project5.html           # Berlin Borough Analysis
 ├── project6.html           # Cart Racing Game
-├── project7.html           # Car Price Prediction App
+├── project7.html           # Car Price Prediction ML Model
 ├── project8.html           # Insurance Cost Predictor
 ├── css/
-│   └── styles.css          # Modern styling with animations
-├── img/                    # Images for projects and profile
+│   └── styles.css          # Responsive styling
+├── img/                    # Project assets and screenshots
 │   ├── me/                 # Profile photos
-│   ├── berlin_project/     # Berlin RentWise screenshots
-│   ├── app_web/            # App vs Web analysis images
+│   ├── berlin_project/     
+│   ├── app_web/            
 │   ├── berlin_borough_life_style/
 │   ├── foreing_population_vs_crime/
 │   └── investment_project/
-├── video/                  # Project demo videos
-└── README.md              # This file
+├── video/                  # Project demos
+└── README.md
 ```
 
 ---
 
-## 🎨 Design Highlights
+## 🎨 Portfolio Design
 
-### Color Palette
-- **Primary**: `#6366f1` (Indigo)
-- **Secondary**: `#8b5cf6` (Purple)
-- **Accent**: `#ec4899` (Pink)
-- **Gradients**: Multiple purple-to-blue transitions
-
-### Typography
-- **Headings**: Poppins (Bold, Modern)
-- **Body**: Inter (Clean, Professional)
-
-### Animations
-- Fade-in on scroll
-- Hover lift effects
-- Gradient text effects
-- Pulsing status indicator
-- Waving hand emoji
+Built with modern web technologies for a clean, professional presentation:
+- **Responsive Design**: Mobile-first approach
+- **Performance**: Optimized assets and lazy loading
+- **Accessibility**: WCAG compliant
+- **SEO**: Semantic HTML and meta tags
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🏙️ [Berlin RentWise](https://berlin-rentwise.fly.dev/)
-**Full-stack Django web application with AI chatbot**
-- Django 5.2.9, PostgreSQL 15, Google Gemini API
-- 447 neighborhoods, REST API, Interactive maps
-- CI/CD with GitHub Actions, Deployed on Fly.io
-- [GitHub Repo](https://github.com/moroianu13/Berlin_capstone_project)
+### � [Job Market Intelligence Platform](https://github.com/moroianu13/job-market-intelligence)
+**End-to-end ML system for detecting ghost jobs and analyzing hiring trends**
+- **ML Pipeline**: Automated data scraping, feature engineering, and model training
+- **Ghost Job Detection**: XGBoost classifier with 89% accuracy, deployed via FastAPI
+- **Tech Stack**: Python, Scikit-learn, XGBoost, PostgreSQL, Docker, CI/CD
+- **Impact**: Helps job seekers identify legitimate opportunities and market trends
+- **System Design**: ETL pipelines, scheduled tasks, model versioning, monitoring
 
-### 💰 Investment Portfolio Analysis
-Data-driven investment analysis with Python
+### 🏙️ [Berlin RentWise](https://berlin-rentwise.fly.dev/)
+**Production-grade Django web application with AI-powered apartment search**
+- **Full-Stack Ownership**: Django 5.2.9, PostgreSQL 15, REST API design
+- **AI Integration**: Google Gemini chatbot with RAG for 447+ neighborhoods
+- **Infrastructure**: Docker containerization, CI/CD with GitHub Actions, Fly.io deployment
+- **Features**: Interactive maps, geospatial queries, automated data updates
+- **[GitHub Repository](https://github.com/moroianu13/Berlin_capstone_project)**
+
+### 💰 Investment Portfolio Optimization
+**Data-driven portfolio analysis with risk modeling and backtesting**
+- Statistical analysis, Monte Carlo simulations, Sharpe ratio optimization
+- Python, Pandas, NumPy, Matplotlib
 
 ### 📊 Web vs App Usage Analysis
-Statistical analysis of user behavior patterns
+**Statistical hypothesis testing and behavioral pattern recognition**
+- A/B testing, chi-square tests, user segmentation
+- Python, Scipy, Seaborn
 
-### 🗺️ Berlin Crime Analysis
-Correlation study between foreign population and crime rates
-
-### 🏘️ Berlin Borough Lifestyle Analysis
-Neighborhood lifestyle classification and visualization
+### 🗺️ Crime & Demographics Correlation Study
+**Geospatial analysis of Berlin crime data with demographic factors**
+- Regression analysis, correlation studies, choropleth visualizations
+- GeoPandas, Folium, Scikit-learn
 
 ---
 
 ## 🎯 About Me
 
-🇷🇴 → 🇩🇪 **From Romania to Germany**
+🇷🇴 → 🇩🇪 **Engineering Career with Global Perspective**
 
-I started my journey studying **Land Surveying & Geodesy** in Bucharest, but life took an exciting turn at Wacken Festival where I met my wife. After 11 years of diverse work experiences in Germany, I pursued my passion for technology.
+After studying **Land Surveying & Geodesy** in Bucharest and gaining 11 years of diverse professional experience in Germany, I transitioned into tech, focusing on building data-driven systems that solve real business problems.
 
-**Current Focus:**
-- 🐍 Python Development (Django, Flask)
-- 📊 Data Analysis (Pandas, NumPy, SQL)
-- 🤖 Machine Learning (Scikit-learn, TensorFlow)
-- ☁️ Cloud Deployment (Fly.io, Docker, CI/CD)
+**What I Bring:**
+- 🏗️ **Data Engineering**: Design and maintain scalable ETL pipelines and data warehouses
+- 🤖 **Machine Learning**: Train, deploy, and monitor production ML models
+- 🐍 **Backend Development**: Django, FastAPI, REST APIs, microservices architecture
+- ☁️ **Cloud & DevOps**: Docker, CI/CD, automated testing, infrastructure as code
+- 📊 **Business Impact**: Focus on measurable outcomes, not just technical implementations
 
-**Certifications:**
-- ✅ DCI Python Back-end Development
-- ✅ Google Data Analytics Certificate
+**Current Work:**
+- Building end-to-end ML systems from data ingestion to production deployment
+- Automating data pipelines and implementing data quality frameworks
+- Designing scalable backend services with proper testing and monitoring
+- Pursuing B.Sc. Computer Science to deepen theoretical foundations
+
+---
+
+## 🎓 Education & Certifications
+
+### 🎓 Formal Education
+- **B.Sc. Computer Science** (In Progress)  
+  *Universitatea Titu Maiorescu, Bucharest*  
+  October 2025 – Present
+
+- **Land Surveying & Geodesy**  
+  *Universitatea Tehnică de Construcții București*
+
+### 📜 Professional Certifications
+- **IBM Advanced Data Science Professional Certificate** (2024)  
+  *Deep Learning, ML Deployment, Apache Spark, Model Evaluation*
+
+- **DCI Python Back-end Development Bootcamp** (2023)  
+  *Django, Flask, REST APIs, PostgreSQL, Software Engineering Best Practices*
+
+- **Google Data Analytics Professional Certificate** (2023)  
+  *SQL, Data Processing, Statistical Analysis, Visualization*
 
 ---
 
 ## 📫 Get In Touch
 
+I'm open to discussing **Machine Learning Engineering**, **Data Engineering**, and **Applied Data Science** opportunities where I can build impactful systems.
+
 - **Email**: [moroianu.adrian90@gmail.com](mailto:moroianu.adrian90@gmail.com)
 - **LinkedIn**: [adrian-moroianu](https://www.linkedin.com/in/adrian-moroianu-45ab55301/)
 - **GitHub**: [@moroianu13](https://github.com/moroianu13)
-- **Location**: Essen, North Rhine-Westphalia, Germany
+- **Location**: Essen, North Rhine-Westphalia, Germany 🇩🇪
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Portfolio
 
-Visit the portfolio: **[https://moroianu13.github.io/](https://moroianu13.github.io/)**
-
----
-
-## 📄 License
-
-This portfolio is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgments
-
-- **Font Awesome** - Beautiful icons
-- **Google Fonts** - Professional typography
-- **GitHub Pages** - Free hosting
-- **Inspiration** - Modern web design trends and best practices
+**[https://moroianu13.github.io/](https://moroianu13.github.io/)**
 
 ---
 
@@ -169,10 +197,16 @@ This portfolio is open source and available under the [MIT License](LICENSE).
 
 ### 💼 Open to Opportunities
 
-I'm actively seeking roles in **Data Analysis**, **Machine Learning**, and **Full-Stack Development**.
+**Machine Learning Engineer | Data Engineer | Applied Data Scientist**
 
-**Built with ❤️ and lots of ☕**
+Interested in roles focused on:
+- 🏗️ Building production ML systems and data pipelines
+- 🤖 Deploying models that drive business decisions
+- ☁️ Designing scalable, cloud-native architectures
+- 📈 Creating measurable impact through data-driven solutions
 
-⭐ Star this repo if you like the design!
+**Let's build something impactful together.**
+
+⭐ Star this repo if you find it useful!
 
 </div>
