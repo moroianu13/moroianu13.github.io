@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Market Intelligence - Adrian Moroianu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>💼 Job Market Intelligence</h1>
+        <p>Production-Ready Data Pipeline with ML Classification and Ghost Job Detection</p>
+        <p>Prepared by: Adrian Moroianu | Updated: January 2026</p>
+
+        <!-- Buttons in the header -->
+        <div class="header-buttons">
+            <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
+            <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/job-market-intelligence'">GitHub Repo</button>
+            <button class="header-btn" onclick="window.location.href='https://job-reports.streamlit.app/'">🚀 Live Dashboard</button>
+        </div>
+    </header>
+
+    <div class="project project-9">
+        <h2>Overview</h2>
+        <p>
+            Job Market Intelligence is an automated job market analysis platform that collects, processes, and analyzes data science job postings 
+            across Europe. The system features ML-powered role classification (91.6% F1-score), ghost job detection through historical tracking, 
+            and an interactive Streamlit dashboard. With automated weekly updates via GitHub Actions and zero-cost deployment on Streamlit Cloud, 
+            this project demonstrates end-to-end data engineering and MLOps expertise.
+        </p>
+
+        <h2>✨ Key Features</h2>
+        <h3>Automated Data Pipeline</h3>
+        <ul>
+            <li><strong>API Integration:</strong> Automated fetching from Adzuna Job Search API across 5 European countries</li>
+            <li><strong>Data Processing:</strong> Comprehensive normalization, validation, and deduplication pipeline</li>
+            <li><strong>Weekly Updates:</strong> GitHub Actions scheduled workflow runs every Monday at 2 AM UTC</li>
+            <li><strong>Historical Tracking:</strong> 90-day snapshot retention for trend analysis and ghost job detection</li>
+        </ul>
+
+        <h3>Machine Learning Models</h3>
+        <ul>
+            <li><strong>Role Classifier:</strong> Logistic Regression with TF-IDF features
+                <ul>
+                    <li>91.6% F1-score</li>
+                    <li>91.0% precision, 92.3% recall</li>
+                    <li>Classes: Data Engineer, Data Scientist, ML Engineer, Data Analyst</li>
+                </ul>
+            </li>
+            <li><strong>Salary Predictor:</strong> Ridge Regression model
+                <ul>
+                    <li>R² = 0.70</li>
+                    <li>MAE = €9,847</li>
+                    <li>Features: Role, country, skills, job description length</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Ghost Job Detection System</h3>
+        <ul>
+            <li><strong>SHA1 Fingerprinting:</strong> Unique job identification across postings</li>
+            <li><strong>Historical Analysis:</strong> Track job reposts and suspicious patterns</li>
+            <li><strong>Pattern Detection:</strong> Identify companies with frequent reposting behavior</li>
+            <li><strong>Automated Alerts:</strong> Flag potentially fake or "always open" positions</li>
+        </ul>
+
+        <h3>Interactive Dashboard</h3>
+        <ul>
+            <li><strong>Real-time Filtering:</strong> By role, country, skills, salary range</li>
+            <li><strong>Data Visualizations:</strong> Role distribution, salary trends, skills analysis</li>
+            <li><strong>Geographic Insights:</strong> Market demand across European countries</li>
+            <li><strong>ML Comparison:</strong> Side-by-side view of ML vs rule-based classification</li>
+            <li><strong>Ghost Job Alerts:</strong> Highlight suspicious job postings</li>
+        </ul>
+
+        <h2>🛠️ Technology Stack</h2>
+        
+        <h3>Data Processing & ML</h3>
+        <ul>
+            <li><strong>pandas 2.1.0+:</strong> Data manipulation and analysis</li>
+            <li><strong>numpy 1.24.0+:</strong> Numerical computing</li>
+            <li><strong>scikit-learn 1.3.0+:</strong> Machine learning models</li>
+            <li><strong>pyarrow 14.0.0+:</strong> Efficient parquet file handling</li>
+        </ul>
+        
+        <h3>Web & Visualization</h3>
+        <ul>
+            <li><strong>Streamlit 1.28.0+:</strong> Interactive dashboard</li>
+            <li><strong>matplotlib 3.7.0+:</strong> Data visualization</li>
+            <li><strong>seaborn 0.12.0+:</strong> Statistical graphics</li>
+        </ul>
+        
+        <h3>API & Data Collection</h3>
+        <ul>
+            <li><strong>requests 2.31.0+:</strong> HTTP library for API calls</li>
+            <li><strong>Adzuna API:</strong> Job posting data source</li>
+            <li><strong>python-dotenv 1.0.0+:</strong> Environment variable management</li>
+        </ul>
+        
+        <h3>DevOps & CI/CD</h3>
+        <ul>
+            <li><strong>GitHub Actions:</strong> Automated testing and deployment</li>
+            <li><strong>Streamlit Cloud:</strong> Free production hosting</li>
+            <li><strong>pytest 7.4.0+:</strong> 53 comprehensive tests</li>
+            <li><strong>pytest-cov 4.1.0+:</strong> Test coverage reporting</li>
+        </ul>
+
+        <h2>🏗️ Architecture</h2>
+        <h3>Data Pipeline Flow</h3>
+        <ol>
+            <li><strong>Data Collection</strong> → Adzuna API → Raw JSON storage</li>
+            <li><strong>Normalization</strong> → Clean & validate → Standardized format</li>
+            <li><strong>Fingerprinting</strong> → SHA1 hashing → Unique job identifiers</li>
+            <li><strong>ML Classification</strong> → TF-IDF + Logistic Regression → Role labels</li>
+            <li><strong>Snapshot Creation</strong> → Historical archiving → Ghost detection</li>
+            <li><strong>EDA & Insights</strong> → Statistical analysis → Report generation</li>
+            <li><strong>Dashboard Update</strong> → Streamlit Cloud auto-deploy → Live data</li>
+        </ol>
+
+        <h3>Project Structure</h3>
+        <pre>
+├── ingestion/          # Data collection from Adzuna API
+├── processing/         # Data cleaning, labeling, fingerprinting
+├── ml/                 # ML models for role classification
+├── analysis/           # EDA, insights, ghost job detection
+├── orchestration/      # Pipeline runner
+├── app/                # Streamlit dashboard
+├── tests/              # 53 comprehensive tests
+└── data/
+    ├── raw/            # Raw API responses
+    ├── curated/        # Processed datasets
+    └── snapshots/      # Historical data
+        </pre>
+
+        <h2>🔄 CI/CD Pipeline</h2>
+        <h3>Automated Workflow</h3>
+        <ol>
+            <li><strong>Every Push</strong> → GitHub Actions CI
+                <ul>
+                    <li>Run 53 pytest tests</li>
+                    <li>Generate coverage reports</li>
+                    <li>Perform security scanning (Trivy)</li>
+                    <li>✅ All tests must pass</li>
+                </ul>
+            </li>
+            <li><strong>Weekly Schedule</strong> (Monday 2 AM UTC)
+                <ul>
+                    <li>Fetch latest job data from Adzuna</li>
+                    <li>Process and label all roles</li>
+                    <li>Detect ghost jobs</li>
+                    <li>Generate EDA reports</li>
+                    <li>Commit results to repository</li>
+                </ul>
+            </li>
+            <li><strong>Streamlit Cloud</strong>
+                <ul>
+                    <li>Auto-deploy on every commit</li>
+                    <li>Update dashboard with fresh data</li>
+                    <li>Zero downtime deployment</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>📊 Data Coverage</h2>
+        <h3>Geographic Scope</h3>
+        <ul>
+            <li>🇦🇹 Austria</li>
+            <li>🇧🇪 Belgium</li>
+            <li>🇩🇪 Germany</li>
+            <li>🇵🇱 Poland</li>
+            <li>🇬🇧 United Kingdom</li>
+        </ul>
+
+        <h3>Job Roles</h3>
+        <ul>
+            <li>Data Engineer</li>
+            <li>Data Scientist</li>
+            <li>Machine Learning Engineer</li>
+            <li>Data Analyst</li>
+        </ul>
+
+        <h2>🧪 Testing</h2>
+        <p><strong>Test Coverage:</strong> 53 comprehensive tests</p>
+        <ul>
+            <li><strong>Unit Tests:</strong> Individual component validation</li>
+            <li><strong>Integration Tests:</strong> End-to-end pipeline workflows</li>
+            <li><strong>Data Quality Tests:</strong> Validation and integrity checks</li>
+            <li><strong>ML Model Tests:</strong> Prediction accuracy and performance</li>
+            <li><strong>API Tests:</strong> Data fetching and error handling</li>
+        </ul>
+
+        <h3>Test Categories</h3>
+        <ul>
+            <li>✅ 26 tests: Original pipeline components</li>
+            <li>✅ 19 tests: Fingerprinting and deduplication</li>
+            <li>✅ 8 tests: Ghost job detection</li>
+        </ul>
+
+        <h2>💰 Cost Optimization</h2>
+        <p><strong>100% Free Deployment</strong></p>
+        <ul>
+            <li><strong>Streamlit Cloud:</strong> $0/month for public repos</li>
+            <li><strong>GitHub Actions:</strong> 2000 free minutes/month
+                <ul>
+                    <li>Pipeline: ~30 min/week = 120 min/month (6% usage)</li>
+                    <li>CI tests: ~5 min per push</li>
+                </ul>
+            </li>
+            <li><strong>GitHub Storage:</strong> Free for public repositories</li>
+            <li><strong>Total Cost:</strong> $0.00/month ✨</li>
+        </ul>
+
+        <h2>📈 Key Metrics</h2>
+        <ul>
+            <li>✅ <strong>91.6% F1-score</strong> for role classification</li>
+            <li>✅ <strong>R² = 0.70</strong> for salary predictions</li>
+            <li>✅ <strong>53/53 tests</strong> passing (100% pass rate)</li>
+            <li>✅ <strong>Weekly updates</strong> fully automated</li>
+            <li>✅ <strong>90-day</strong> historical data retention</li>
+            <li>✅ <strong>447+ jobs</strong> analyzed per run</li>
+            <li>✅ <strong>5 countries</strong> covered</li>
+            <li>✅ <strong>4 role types</strong> classified</li>
+        </ul>
+
+        <h2>🚀 Live Demo</h2>
+        <p>Experience the dashboard live at: <a href="https://job-reports.streamlit.app/" target="_blank">https://job-reports.streamlit.app/</a></p>
+
+        <h3>Dashboard Features</h3>
+        <ul>
+            <li><strong>Overview Tab:</strong> Summary statistics, key metrics, geographic distribution</li>
+            <li><strong>Roles & Skills:</strong> Role distribution, top skills by role, multi-role analysis</li>
+            <li><strong>Salary Analysis:</strong> Salary distributions, country comparisons, trends</li>
+            <li><strong>ML Comparison:</strong> Side-by-side ML vs rule-based classification accuracy</li>
+            <li><strong>Job Explorer:</strong> Searchable table with 100+ jobs, filters, and details</li>
+        </ul>
+
+        <h2>📚 Project Highlights</h2>
+        <ul>
+            <li>✅ Production-ready data pipeline with automated orchestration</li>
+            <li>✅ ML-powered role classification outperforming rule-based approaches</li>
+            <li>✅ Novel ghost job detection system using fingerprinting</li>
+            <li>✅ Interactive dashboard with real-time filtering and visualizations</li>
+            <li>✅ Comprehensive test coverage ensuring reliability</li>
+            <li>✅ 100% free deployment with automated updates</li>
+            <li>✅ Clean, maintainable codebase following best practices</li>
+            <li>✅ Full CI/CD pipeline with GitHub Actions</li>
+        </ul>
+
+        <h2>🎯 Technical Skills Demonstrated</h2>
+        <ul>
+            <li><strong>Data Engineering:</strong> ETL pipelines, data validation, deduplication</li>
+            <li><strong>Machine Learning:</strong> Supervised learning, NLP, model evaluation</li>
+            <li><strong>MLOps:</strong> Automated training, deployment, monitoring</li>
+            <li><strong>DevOps:</strong> CI/CD, automated testing, cloud deployment</li>
+            <li><strong>API Integration:</strong> RESTful APIs, rate limiting, error handling</li>
+            <li><strong>Data Visualization:</strong> Interactive dashboards, statistical graphics</li>
+            <li><strong>Software Engineering:</strong> Clean code, testing, documentation</li>
+        </ul>
+
+        <h2>🔗 Repository</h2>
+        <p>View the complete source code at: <a href="https://github.com/moroianu13/job-market-intelligence" target="_blank">github.com/moroianu13/job-market-intelligence</a></p>
+
+        <h3>Repository Stats</h3>
+        <ul>
+            <li>⭐ Clean, well-documented codebase</li>
+            <li>📝 Comprehensive README with setup instructions</li>
+            <li>✅ GitHub Actions workflows for CI/CD</li>
+            <li>🧪 53 automated tests with pytest</li>
+            <li>📊 Data files and reports included</li>
+        </ul>
+    </div>
+</body>
+</html>
