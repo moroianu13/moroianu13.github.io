@@ -732,6 +732,21 @@ section {
     color: var(--text-light);
 }
 
+.project-note {
+    margin: 1.25rem 0 1.75rem;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0.75rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.repo-cta {
+    margin-top: 1.25rem;
+    padding-top: 0.5rem;
+}
+
 .image-caption {
     margin-top: -1rem;
     margin-bottom: 1.5rem;
