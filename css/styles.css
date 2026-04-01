@@ -515,6 +515,31 @@ body {
     margin-top: 3rem;
 }
 
+.project-card-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.project-card-actions .btn {
+    padding: 0.75rem 1.1rem;
+    font-size: 0.95rem;
+}
+
+.project-highlights {
+    margin: 1rem 0 0 1.25rem;
+    color: var(--text-light);
+}
+
+.project-highlights li {
+    margin: 0.5rem 0;
+}
+
+.project-meta {
+    margin-top: 1rem;
+}
+
 /* ===================================
    CONTACT SECTION
    =================================== */
@@ -707,6 +732,14 @@ section {
     color: var(--text-light);
 }
 
+.image-caption {
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-lighter);
+    font-size: 0.95rem;
+}
+
 /* Project color variations */
 .project-1 {
     border-top: 4px solid #667eea;
@@ -726,6 +759,10 @@ section {
 
 .project-5 {
     border-top: 4px solid #30cfd0;
+}
+
+.project-10 {
+    border-top: 4px solid #2563eb;
 }
 
 /* Projects list page */
