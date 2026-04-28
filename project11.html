@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Webcam App - Adrian Moroianu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Face Recognition Webcam App</h1>
+        <p>Real-time face enrollment and recognition with Python, OpenCV, and InsightFace</p>
+        <p>Prepared by: Adrian Moroianu | Updated: April 2026</p>
+
+        <div class="header-buttons">
+            <button class="header-btn" onclick="window.location.href='projects.html'">Back to Projects</button>
+            <button class="header-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="header-btn" onclick="window.location.href='https://github.com/moroianu13/face_app'">GitHub Repo</button>
+        </div>
+    </header>
+
+    <div class="project project-11">
+        <h2>Overview</h2>
+        <p>
+            This project is a local desktop face recognition app that uses a webcam to enroll known faces and recognize them in real time. It combines OpenCV for camera access and display, InsightFace for face detection and embeddings, and NumPy for similarity matching.
+        </p>
+        <p class="project-note">
+            The app stores face embeddings locally in the <strong>known_faces</strong> folder. These personal files are intentionally excluded from GitHub.
+        </p>
+
+        <h2>Demo</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="video/face-app-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h2>How It Works</h2>
+        <ul>
+            <li>The enrollment script opens the webcam and detects the largest visible face.</li>
+            <li>When a key is pressed, the app saves that face as a numerical embedding.</li>
+            <li>The recognition script compares each live face embedding with saved embeddings.</li>
+            <li>If cosine similarity passes the threshold, the app displays the matched name and score.</li>
+        </ul>
+
+        <h2>Tech Stack</h2>
+        <ul>
+            <li><strong>Python</strong> for the application logic</li>
+            <li><strong>OpenCV</strong> for webcam capture, drawing, and display</li>
+            <li><strong>InsightFace</strong> for face detection and embedding extraction</li>
+            <li><strong>NumPy</strong> for vector comparison and embedding storage</li>
+            <li><strong>ONNX Runtime</strong> for running the face model locally on CPU</li>
+            <li><strong>PyInstaller</strong> support for creating a desktop executable</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>Live webcam face detection and recognition</li>
+            <li>Local enrollment workflow for known identities</li>
+            <li>Configurable webcam index through an environment variable</li>
+            <li>Privacy-conscious local storage for face embeddings</li>
+        </ul>
+
+        <h2>GitHub Repository</h2>
+        <p>
+            The source code, setup instructions, and project demo are available on GitHub:
+        </p>
+        <div class="project-card-actions repo-cta">
+            <a href="https://github.com/moroianu13/face_app" target="_blank" class="btn btn-primary">Open GitHub Repository</a>
+            <a href="projects.html" class="btn btn-secondary">Back to Projects</a>
+        </div>
+        <p>
+            Repository: <a href="https://github.com/moroianu13/face_app" target="_blank">github.com/moroianu13/face_app</a>
+        </p>
+    </div>
+</body>
+</html>
