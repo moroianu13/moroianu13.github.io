@@ -1,315 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adrian Moroianu - Data Science & Machine Learning Student. Full-stack developer specializing in Python, Django, and ML.">
-    <meta name="keywords" content="Data Analyst, Machine Learning, Python, Django, Full-Stack Developer, Portfolio">
-    <meta name="author" content="Adrian Moroianu">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    <title>Adrian Moroianu - Data Analyst & ML Engineer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adrian Moroianu — AI systems, data science, product engineering, healthcare software and autonomous research projects.">
+  <meta name="keywords" content="Adrian Moroianu, AI systems, data science, machine learning, local AI, multi-agent systems, healthcare software, Python, Rust, Tauri">
+  <meta name="author" content="Adrian Moroianu">
+  <title>Adrian Moroianu — AI Systems, Data Science & Product Engineering</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>AM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">AM</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Adrian Moroianu home">
+        <span class="brand-mark">AM</span>
+        <span class="brand-copy"><strong>Adrian Moroianu</strong><span>AI systems · data science</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="wave">👋</span> Hi, I'm <span class="gradient-text">Adrian Moroianu</span>
-                </h1>
-                <h2 class="hero-subtitle">Data Science & Machine Learning Student</h2>
-                <p class="hero-description">
-                    Based in Essen, Germany. Passionate about Python, AI, and building real-world data-driven systems.
-                    From construction sites to machine learning pipelines.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Get In Touch
-                    </a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/moroianu13" target="_blank" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/adrian-moroianu-45ab55301/" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:moroianu.adrian90@gmail.com" class="social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="availability"><span class="pulse"></span>Essen, Germany · Open to opportunities</div>
+            <p class="hero-role">Computer Science & Data Science student · Product builder · Co-founder</p>
+            <h1>I build <span class="accent">intelligent systems</span> across AI, research, healthcare and data.</h1>
+            <p class="hero-lead">My work ranges from local AI agents and multi-agent research systems to medical software, scientific visualization and end-to-end data products. I care about architecture, evidence, security and the frontend experience—not just the model.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work"><i class="fa-solid fa-arrow-down"></i> Explore flagship work</a>
+              <a class="btn btn-secondary" href="https://github.com/moroianu13" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/adrian-moroianu-45ab55301/" target="_blank" rel="noreferrer">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <img src="img/me/2025-03-22_12-49-24_21.jpg" alt="Adrian Moroianu" class="profile-img">
-                    <div class="profile-status">
-                        <span class="status-dot"></span>
-                        Available for opportunities
-                    </div>
-                </div>
+          </div>
+
+          <div class="profile-shell" aria-label="Profile">
+            <div class="profile-frame">
+              <img src="img/me/2025-03-22_12-49-24_21.jpg" alt="Adrian Moroianu" loading="eager">
+              <div class="profile-caption"><strong>Building beyond one niche</strong><span>AI · Data · Product</span></div>
             </div>
+            <span class="orbit-tag one">Local AI systems</span>
+            <span class="orbit-tag two">Healthcare software</span>
+            <span class="orbit-tag three">Research automation</span>
+          </div>
         </div>
+
+        <div class="focus-strip" aria-label="Current focus areas">
+          <div class="focus-item"><span>01 / Systems</span><strong>Local AI & agent architecture</strong></div>
+          <div class="focus-item"><span>02 / Research</span><strong>Autonomous scientific workflows</strong></div>
+          <div class="focus-item"><span>03 / Healthcare</span><strong>Medical software & visualization</strong></div>
+          <div class="focus-item"><span>04 / Data</span><strong>ML, analytics & engineering</strong></div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>My Journey</h3>
-                    <p>
-                        Originally from <strong>Tulcea, Romania</strong>, I studied <strong>Land Surveying & Geodesy</strong> in Bucharest. 
-                        During my third year, a life-changing moment at Wacken Festival brought me to Germany, where I permanently changed both my life and career direction.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Real-World Experience</h3>
-                    <p>
-                        Over 11 years in Germany working across construction, production, technical installations, and waste management. 
-                        These experiences shaped my <strong>work ethic, adaptability, and problem-solving mindset</strong>. 
-                        Completed <strong>DCI Python Development</strong> and <strong>Google Data Analytics Certificate</strong>, discovering my passion for ML and AI.
-                    </p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Current Focus</h3>
-                    <p>
-                        Enrolled in university for <strong>Computer Science & Data Science</strong>. Actively studying <strong>Machine Learning & Deep Learning</strong> (DeepLearning.AI), 
-                        <strong>Data Science & ML Engineering</strong> (IBM & Google). Involved in a <strong>private healthcare AI research project</strong> focused on clinical data analysis and AI-assisted decision support systems.
-                    </p>
-                </div>
+    <section class="section" id="work">
+      <div class="container">
+        <span class="section-kicker">Flagship work</span>
+        <h2 class="section-title">Projects that show how I think and build.</h2>
+        <p class="section-copy">These are not isolated tutorials. They combine architecture, implementation, interfaces, constraints and real workflows across several technical domains.</p>
+
+        <div class="work-grid">
+          <a class="work-card wide" href="red-queen.html">
+            <div class="work-media"><img src="img/portfolio/red-queen-command.webp" alt="Red Queen local AI Control Center" loading="lazy"></div>
+            <div class="work-copy">
+              <div class="card-topline"><span>Local AI system</span><span class="status-chip">Active development</span></div>
+              <h3>Red Queen</h3>
+              <p>A privacy-first local Windows AI assistant combining local LLM inference, persistent memory, desktop interaction, controlled tools, voice and vision behind explicit security boundaries.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Rust</span><span class="tag">Tauri</span><span class="tag">Qwen</span><span class="tag">Ollama</span><span class="tag">Letta</span><span class="tag">Obsidian</span></div>
+              <span class="card-link">View system case study →</span>
             </div>
+          </a>
+
+          <a class="work-card" href="autonomous-research-lab.html">
+            <div class="work-media"><img src="img/portfolio/research-lab.webp" alt="Autonomous Research Lab multi-agent research dashboard" loading="lazy"></div>
+            <div class="work-copy">
+              <div class="card-topline"><span>Multi-agent research</span><span class="status-chip">Active</span></div>
+              <h3>Autonomous Research Lab</h3>
+              <p>A domain-agnostic local research platform that coordinates specialized agents to investigate testable questions, challenge hypotheses, analyze evidence and preserve provenance.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Multi-agent systems</span><span class="tag">Research automation</span><span class="tag">Statistics</span><span class="tag">Data provenance</span></div>
+              <span class="card-link">Explore the lab →</span>
+            </div>
+          </a>
+
+          <a class="work-card" href="neuroanatomy.html">
+            <div class="work-media"><img src="img/portfolio/neuroanatomy.webp" alt="NeuroAnatomy intelligent 3D atlas interface" loading="lazy"></div>
+            <div class="work-copy">
+              <div class="card-topline"><span>3D medical education</span><span class="status-chip">In development</span></div>
+              <h3>NeuroAnatomy</h3>
+              <p>An intelligent 3D neuroanatomy atlas for academic and educational use, connecting anatomical structures with function, arterial supply, venous drainage and clinical context.</p>
+              <div class="tags"><span class="tag">3D visualization</span><span class="tag">Neuroanatomy</span><span class="tag">Medical education</span><span class="tag">Scientific UI</span></div>
+              <span class="card-link">View atlas case study →</span>
+            </div>
+          </a>
+
+          <a class="work-card wide" href="medcore.html">
+            <div class="work-media logo-media"><img src="img/portfolio/medcore-logo.webp" alt="MedCore Systems logo" loading="lazy"></div>
+            <div class="work-copy">
+              <div class="card-topline"><span>Healthcare venture</span><span class="status-chip">Founded June 2026</span></div>
+              <h3>MedCore Systems</h3>
+              <p>Healthcare technology startup co-founded with Cristina Danilov and Alexandru Neacsu, focused on software for medical environments. We are currently developing an AI-assisted medical software solution for neurology.</p>
+              <div class="tags"><span class="tag">Healthcare technology</span><span class="tag">Medical software</span><span class="tag">AI</span><span class="tag">Product development</span><span class="tag">Co-founder</span></div>
+              <span class="card-link">About the venture →</span>
+            </div>
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend & Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Data & ML</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">Statistical Analysis</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Agile</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> AI & Cloud</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Google Gemini API</span>
-                        <span class="skill-tag">OpenAI</span>
-                        <span class="skill-tag">Fly.io</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Healthcare AI</span>
-                        <span class="skill-tag">Clinical Data Analysis</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-tight" id="capabilities">
+      <div class="container">
+        <span class="section-kicker">Selected data work</span>
+        <h2 class="section-title">The data science foundation is still here.</h2>
+        <p class="section-copy">I also build conventional analytics and ML projects—useful for showing statistical reasoning, data engineering and deployment alongside the larger AI systems.</p>
+        <div class="compact-grid">
+          <a class="compact-card" href="project12.html"><div class="icon"><i class="fa-solid fa-hospital"></i></div><h3>Hospital Pressure Index — Ruhrgebiet</h3><p>Healthcare analytics project focused on operational pressure indicators and regional comparison.</p></a>
+          <a class="compact-card" href="project9.html"><div class="icon"><i class="fa-solid fa-chart-line"></i></div><h3>Job Market Intelligence</h3><p>Data collection, transformation and analytics for understanding job-market signals and skill demand.</p></a>
+          <a class="compact-card" href="projects.html"><div class="icon"><i class="fa-solid fa-layer-group"></i></div><h3>All projects</h3><p>Explore earlier ML, analytics, forecasting, computer vision and application projects.</p></a>
         </div>
+
+        <div class="discipline-grid">
+          <div class="discipline"><strong>AI systems</strong><p>Local LLMs, agent orchestration, tool calling, persistent memory and bounded automation.</p></div>
+          <div class="discipline"><strong>Data science</strong><p>Statistical analysis, ML workflows, feature engineering, evaluation and visualization.</p></div>
+          <div class="discipline"><strong>Engineering</strong><p>Python, Rust, APIs, databases, Docker, testing, CI/CD and application architecture.</p></div>
+          <div class="discipline"><strong>Product & UI</strong><p>Interfaces that make complex technical systems understandable, observable and usable.</p></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Featured Work</h2>
-            <p class="section-subtitle">End-to-end ML projects combining data science, data engineering, Docker, and deployed applications</p>
-            <div class="about-content" style="margin-top: 2rem;">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h3>Computer Vision & Local AI</h3>
-                    <p>
-                        Building practical AI tools that run locally, including webcam face recognition with enrollment, live inference, and privacy-conscious embedding storage.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>OpenCV webcam capture and real-time visual feedback</li>
-                        <li>InsightFace embeddings with cosine similarity matching</li>
-                        <li>Local-first inference workflows for sensitive data</li>
-                    </ul>
-                    <div class="skill-tags project-meta">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">InsightFace</span>
-                        <span class="skill-tag">ONNX Runtime</span>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>End-to-End ML Applications</h3>
-                    <p>
-                        Creating complete machine learning products that move from data collection and cleaning to model training, application interfaces, and deployable user workflows.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>Predictive models wrapped in Streamlit, Django, and desktop interfaces</li>
-                        <li>Feature engineering, model evaluation, and user-facing prediction flows</li>
-                        <li>Docker-based environments for reproducible development and deployment</li>
-                    </ul>
-                    <div class="skill-tags project-meta">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Streamlit</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                    </div>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Data Engineering & Analytics</h3>
-                    <p>
-                        Combining data science with data engineering: scraping, transforming, storing, analyzing, and visualizing datasets for business, market, geographic, and research problems.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>ETL-style workflows for job market, investment, and public datasets</li>
-                        <li>PostgreSQL-backed applications and structured analytical datasets</li>
-                        <li>Dashboards, visual reports, forecasting, and scenario analysis</li>
-                    </ul>
-                    <div class="skill-tags project-meta">
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Visualization</span>
-                        <span class="skill-tag">ETL</span>
-                    </div>
-                </div>
+    <section class="section" id="about">
+      <div class="container">
+        <span class="section-kicker">About</span>
+        <h2 class="section-title">A technical path shaped by building real things.</h2>
+        <div class="about-grid">
+          <div class="about-aside">
+            <img src="img/me/2025-03-22_12-49-24_21.jpg" alt="Adrian Moroianu" loading="lazy">
+            <div class="aside-copy">Based in Essen, Germany. Originally from Tulcea, Romania. I work comfortably across English, Romanian and German environments.</div>
+          </div>
+          <div class="about-copy">
+            <p>I am studying <strong>Computer Science & Data Science</strong> while building systems that increasingly sit between AI engineering, data science, product architecture and applied research.</p>
+            <p>Before software, I spent years in technical and operational roles in Germany. That background still influences how I approach engineering: systems should be practical, observable, maintainable and useful outside a notebook.</p>
+            <p>My current work includes a local AI assistant, an autonomous research platform, healthcare software through <strong>MedCore Systems</strong>, 3D medical education tooling and data-science applications.</p>
+            <div class="timeline">
+              <div class="timeline-row"><span>Current</span><strong>Computer Science & Data Science · AI systems · healthcare software · research automation</strong></div>
+              <div class="timeline-row"><span>2026</span><strong>Co-founded MedCore Systems and expanded into local agentic AI and scientific automation</strong></div>
+              <div class="timeline-row"><span>Foundation</span><strong>Python development, data analytics, statistics, ML, PostgreSQL and deployed applications</strong></div>
             </div>
-            <div class="projects-cta">
-                <a href="projects.html" class="btn btn-primary btn-large">
-                    <i class="fas fa-grid-2"></i> View All Projects
-                </a>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
-            <div class="contact-grid">
-                <a href="mailto:moroianu.adrian90@gmail.com" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>moroianu.adrian90@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/adrian-moroianu-45ab55301/" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </a>
-                <a href="https://github.com/moroianu13" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub</h3>
-                    <p>View my repositories</p>
-                </a>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>Essen, Germany</p>
-                </div>
-            </div>
+    <section class="section section-tight" id="stack">
+      <div class="container">
+        <span class="section-kicker">Technical stack</span>
+        <h2 class="section-title">Broad enough to build end to end.</h2>
+        <div class="stack-grid">
+          <div class="stack-card"><h3>AI & agents</h3><div class="stack-list"><span>Qwen</span><span>Ollama</span><span>Letta</span><span>Local LLMs</span><span>Tool calling</span><span>Agent orchestration</span></div></div>
+          <div class="stack-card"><h3>Data & ML</h3><div class="stack-list"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Statistics</span><span>Machine learning</span><span>Computer vision</span></div></div>
+          <div class="stack-card"><h3>Engineering</h3><div class="stack-list"><span>Rust</span><span>Tauri</span><span>PostgreSQL</span><span>Docker</span><span>REST APIs</span><span>Git</span><span>CI/CD</span><span>Testing</span></div></div>
+          <div class="stack-card"><h3>Applications</h3><div class="stack-list"><span>JavaScript</span><span>HTML/CSS</span><span>Django</span><span>Streamlit</span><span>Scientific UI</span><span>Data visualization</span><span>3D interfaces</span></div></div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Adrian Moroianu. Built with passion for data and technology.</p>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Looking for someone who can move across the stack?</h2>
+            <p>I am open to data science, ML/AI engineering and technical product opportunities where hands-on building, systems thinking and continuous learning matter.</p>
+          </div>
+          <div class="inline-actions">
+            <a class="btn btn-primary" href="mailto:moroianu.adrian90@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/adrian-moroianu-45ab55301/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <!-- Smooth Scroll Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Adrian Moroianu. Built with HTML/CSS/JS and maintained as a living portfolio.</span>
+      <div class="footer-links"><a href="projects.html">Projects</a><a href="https://github.com/moroianu13" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:moroianu.adrian90@gmail.com">Email</a></div>
+    </div>
+  </footer>
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
+  <script>
+    const nav = document.querySelector('.site-nav');
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    const setScrolled = () => nav.classList.toggle('scrolled', window.scrollY > 18);
+    setScrolled();
+    window.addEventListener('scroll', setScrolled, {passive:true});
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
+  </script>
 </body>
 </html>
-
