@@ -1,39 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects - Adrian Moroianu</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected projects by Adrian Moroianu across AI systems, autonomous research, healthcare software, 3D education, data science and machine learning.">
+  <title>Projects — Adrian Moroianu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-    </header>
+  <nav class="site-nav"><div class="container nav-inner"><a class="brand" href="index.html"><span class="brand-mark">AM</span><span class="brand-copy"><strong>Adrian Moroianu</strong><span>AI systems · data science</span></span></a><div class="nav-links"><a href="index.html">Home</a><a href="#flagship">Flagship</a><a href="#data">Data & ML</a><a class="nav-cta" href="mailto:moroianu.adrian90@gmail.com">Contact</a></div></div></nav>
+  <main class="container">
+    <header class="page-hero"><span class="eyebrow">Portfolio / work index</span><h1>Projects across systems, science, healthcare and data.</h1><p>I keep the strongest recent builds at the top while preserving earlier projects that show the foundations: analytics, ML, computer vision, databases and deployed applications.</p></header>
 
-    <section id="projects-list">
-        <h2>Select a Project:</h2>
-
-        <div class="project-buttons">
-            <button onclick="window.location.href='project12.html'">Hospital Pressure Index - Ruhrgebiet</button>
-            <button onclick="window.location.href='project11.html'">Face Recognition Webcam App</button>
-            <button onclick="window.location.href='project10.html'">Collapse Pathways</button>
-            <button onclick="window.location.href='project1.html'">Berlin RentWise</button>
-            <button onclick="window.location.href='project9.html'">Job Market Intelligence</button>
-            <button onclick="window.location.href='project2.html'">Investment Portfolio Analysis</button>
-            <button onclick="window.location.href='project3.html'">Web vs. App Usage Analysis</button>
-            <button onclick="window.location.href='project4.html'">Analysis of Foreign Population and Crime in Berlin</button>
-            <button onclick="window.location.href='project5.html'">Berlin Borough Lifestyle Analysis</button>
-            <button onclick="window.location.href='project6.html'">Cart Racing Game</button>
-            <button onclick="window.location.href='project7.html'">Car Price Prediction App</button>
-            <button onclick="window.location.href='project8.html'">Insurance Cost Predictor App</button>
-        </div>
-
-        <p>More projects will be added soon, stay tuned!</p>
+    <section class="category-block" id="flagship">
+      <div class="category-title"><h2>Flagship systems</h2><span>Current / high-signal work</span></div>
+      <div class="project-list">
+        <a class="project-row" href="red-queen.html"><strong>Red Queen</strong><span>Local AI agent · desktop automation · persistent memory · security boundaries</span></a>
+        <a class="project-row" href="autonomous-research-lab.html"><strong>Autonomous Research Lab</strong><span>Domain-agnostic multi-agent research · evidence · statistics · provenance</span></a>
+        <a class="project-row" href="neuroanatomy.html"><strong>NeuroAnatomy</strong><span>Intelligent 3D atlas · academic & medical education · scientific visualization</span></a>
+        <a class="project-row" href="medcore.html"><strong>MedCore Systems</strong><span>Healthcare technology startup · medical software · co-founder</span></a>
+      </div>
     </section>
 
-    <section id="back-to-home">
-        <button onclick="window.location.href='index.html'">Back to Home</button>
+    <section class="category-block" id="data">
+      <div class="category-title"><h2>Data science & analytics</h2><span>Applied analysis / ML</span></div>
+      <div class="project-list">
+        <a class="project-row" href="project12.html"><strong>Hospital Pressure Index — Ruhrgebiet</strong><span>Healthcare analytics and regional pressure indicators</span></a>
+        <a class="project-row" href="project9.html"><strong>Job Market Intelligence</strong><span>Data engineering, market signals and analytical workflows</span></a>
+        <a class="project-row" href="project10.html"><strong>Collapse Pathways</strong><span>Scenario analysis and data-driven modeling</span></a>
+        <a class="project-row" href="project1.html"><strong>Berlin RentWise</strong><span>Housing data analysis and application workflow</span></a>
+        <a class="project-row" href="project2.html"><strong>Investment Portfolio Analysis</strong><span>Financial data analysis, risk and portfolio exploration</span></a>
+        <a class="project-row" href="project3.html"><strong>Web vs. App Usage Analysis</strong><span>Comparative behavioral data analysis</span></a>
+        <a class="project-row" href="project4.html"><strong>Foreign Population & Crime in Berlin</strong><span>Exploratory public-data analysis with careful interpretation</span></a>
+        <a class="project-row" href="project5.html"><strong>Berlin Borough Lifestyle Analysis</strong><span>Geographic and lifestyle data exploration</span></a>
+      </div>
     </section>
+
+    <section class="category-block">
+      <div class="category-title"><h2>Applications & earlier builds</h2><span>Engineering foundations</span></div>
+      <div class="project-list">
+        <a class="project-row" href="project11.html"><strong>Face Recognition Webcam App</strong><span>Local computer vision workflow and live inference</span></a>
+        <a class="project-row" href="project7.html"><strong>Car Price Prediction App</strong><span>ML prediction pipeline with user-facing interface</span></a>
+        <a class="project-row" href="project8.html"><strong>Insurance Cost Predictor</strong><span>Regression model packaged as an application</span></a>
+        <a class="project-row" href="project6.html"><strong>Cart Racing Game</strong><span>Programming and application logic project</span></a>
+      </div>
+    </section>
+
+    <section class="section section-tight"><div class="contact-panel"><div><span class="section-kicker">Back to overview</span><h2>The portfolio is intentionally broader than one role.</h2><p>The common thread is building useful technical systems—from data and ML through agents, research tooling, healthcare software and interactive frontends.</p></div><div class="inline-actions"><a class="btn btn-primary" href="index.html">Homepage</a><a class="btn btn-secondary" href="https://github.com/moroianu13" target="_blank" rel="noreferrer">GitHub</a></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2026 Adrian Moroianu</span><div class="footer-links"><a href="index.html">Home</a><a href="mailto:moroianu.adrian90@gmail.com">Email</a></div></div></footer>
 </body>
 </html>
