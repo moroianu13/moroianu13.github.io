@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Climate + War = Hunger? — a reproducible statistical research project examining food insecurity, armed conflict, climate stress and trade dependencies using FAO, UCDP and ERA5 data.">
+  <title>Climate + War = Hunger? — Adrian Moroianu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/projects-v3.css">
+  <link rel="stylesheet" href="css/climate-case.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">AM <span>Adrian Moroianu</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="projects.html">Projects</a>
+        <a href="startup.html">Startup</a><a href="mailto:moroianu.adrian90@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <span class="eyebrow">October 2026 · Research case study · University project</span>
+        <h1>Climate + War = Hunger?</h1>
+        <p class="lead narrow">An end-to-end statistical investigation of how armed conflict, climate stress and international agricultural trade exposure relate to global food insecurity.</p>
+        <div class="actions">
+          <a class="btn" href="projects.html">← Projects</a>
+          <a class="btn primary" href="https://moroianu13.github.io/climate-war-hunger-site/" target="_blank" rel="noopener noreferrer">Explore interactive report ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap case-layout">
+        <aside class="case-aside">
+          <h3>In short</h3>
+          <p>A reproducible observational research workflow that connects public food-security, conflict, climate and agricultural trade datasets to answer five research questions without making unsupported causal claims.</p>
+          <h3>Stack / themes</h3>
+          <div class="stack-chips">
+            <span>Python</span><span>Pandas</span><span>Statistical inference</span>
+            <span>Panel regression</span><span>Fixed effects</span><span>Plotly</span>
+            <span>Quarto</span><span>Data validation</span>
+          </div>
+          <p class="notice">Academic project for Probability and Mathematical Statistics, Titu Maiorescu University. Public report available in Romanian, with expandable Python code and interactive maps.</p>
+        </aside>
+        <div class="case-main">
+          <div class="climate-preview" role="img" aria-label="Climate + War = Hunger? Research graphic connecting climate stress, organized violence and food insecurity.">
+            <span class="climate-preview__eyebrow">Global food security · Statistical research</span>
+            <div>
+              <div class="climate-preview__title">Climate + War <em>= Hunger?</em></div>
+              <p class="climate-preview__sub">A question tested against international evidence, not a conclusion assumed in advance.</p>
+            </div>
+            <div class="climate-preview__bottom"><span>FAO FIES</span><span>UCDP</span><span>ERA5</span><span>FAOSTAT</span></div>
+          </div>
+
+          <section class="case-section">
+            <h2>The research question</h2>
+            <p>Are countries affected by armed conflict and climate stress associated with higher food insecurity? Is there evidence of an additional interaction when the two occur together? Can exposure also travel indirectly through international grain supply chains?</p>
+            <p>The report evaluates these ideas as five separate questions (RQ1–RQ5), including a descriptive 2027 outlook based on the latest available observations—not a famine prediction.</p>
+          </section>
+
+          <section class="case-section">
+            <h2>Scope of the analysis</h2>
+            <div class="climate-case-metrics">
+              <div class="climate-case-metric"><strong>157</strong><span>Countries represented in the historical FAO FIES panel</span></div>
+              <div class="climate-case-metric"><strong>5</strong><span>Research questions across direct and indirect exposure</span></div>
+              <div class="climate-case-metric"><strong>2026</strong><span>Reference snapshot, with three-year FIES windows</span></div>
+            </div>
+            <p>The investigation combines FAO FIES (food insecurity), UCDP organized violence, ERA5 climate indicators and FAOSTAT agricultural production and bilateral trade. Coverage differs by question and model; missing data are explicitly flagged rather than silently interpreted as zero.</p>
+          </section>
+
+          <section class="case-section">
+            <h2>From raw data to statistical evidence</h2>
+            <div class="flow">
+              <span>Official sources</span><b>→</b>
+              <span>Validated snapshots</span><b>→</b>
+              <span>Country + time harmonisation</span><b>→</b>
+              <span>Panel models</span><b>→</b>
+              <span>Interactive report</span>
+            </div>
+            <p>The reproducible Python pipeline downloads and audits data, standardises country identifiers, aggregates annual exposures to FIES three-year windows, checks coverage, and produces model outputs and charts for a Quarto report.</p>
+          </section>
+
+          <section class="case-section">
+            <h2>Findings and statistical caution</h2>
+            <p>The descriptive comparison for organized violence shows a difference of approximately <strong>14.87 percentage points</strong> in mean food insecurity between exposed and unexposed country-period observations. However, the preferred model with country and period fixed effects estimates an association of approximately <strong>+0.58 pp (p = 0.498)</strong>—not statistically distinguishable from zero at the 5% threshold.</p>
+            <p>The analysis also tests climatic indicators, a conflict × drought interaction, and external exposure through trade. Their preferred country-and-period fixed-effects specifications likewise do not establish a robust statistically significant relationship in this dataset.</p>
+            <div class="climate-case-note"><strong>What matters:</strong> large cross-country differences are not automatically causal effects. The work explicitly addresses overlapping observation windows, incomplete geographic coverage, uncertainty and the distinction between measured food insecurity and a predicted risk of famine.</div>
+          </section>
+
+          <section class="case-section">
+            <h2>What this project demonstrates</h2>
+            <p>Working beyond a notebook: multi-source data engineering, documented statistical assumptions, panel estimation, hypothesis testing, robustness checks, uncertainty-aware interpretation and an accessible, interactive publication with downloadable processed datasets.</p>
+            <div class="actions">
+              <a class="btn primary" href="https://moroianu13.github.io/climate-war-hunger-site/" target="_blank" rel="noopener noreferrer">Read the full interactive research ↗</a>
+              <a class="btn" href="projects.html">Back to project timeline</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>Adrian Moroianu</strong><span>Essen, Germany</span></div>
+      <div class="footer-links">
+        <a href="mailto:moroianu.adrian90@gmail.com">moroianu.adrian90@gmail.com</a>
+        <a href="https://www.linkedin.com/in/adrian-moroianu-45ab55301/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/moroianu13" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
