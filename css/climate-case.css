@@ -1,0 +1,114 @@
+/* Shared visual motif for the Climate + War = Hunger? research case study. */
+.climate-preview {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:100%;
+  max-width:490px;
+  min-height:235px;
+  margin:0 auto;
+  padding:27px 28px;
+  overflow:hidden;
+  isolation:isolate;
+  border:1px solid #536074;
+  border-radius:16px;
+  background:
+    radial-gradient(circle at 76% 45%,rgba(248,175,74,.23) 0,transparent 32%),
+    radial-gradient(circle at 24% 75%,rgba(76,147,200,.27) 0,transparent 34%),
+    linear-gradient(127deg,#071322 0%,#182537 57%,#322b2d 100%);
+  color:#f7f5ef;
+  box-shadow:0 16px 36px rgba(0,0,0,.17);
+}
+.climate-preview::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:-78px;
+  right:-74px;
+  width:365px;
+  height:365px;
+  border-radius:50%;
+  border:1px solid rgba(226,233,237,.19);
+  background:repeating-radial-gradient(circle at center,
+    transparent 0,transparent 31px,rgba(235,239,240,.075) 32px,transparent 33px);
+  transform:rotate(-15deg);
+}
+.climate-preview__eyebrow {
+  color:#e0ba81;
+  font-size:.7rem;
+  font-weight:800;
+  line-height:1.4;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.climate-preview__title {
+  max-width:375px;
+  margin:17px 0 7px;
+  font:800 clamp(1.65rem,3vw,2.4rem)/1.13 Manrope,sans-serif;
+  letter-spacing:-.04em;
+  color:#fff9ee;
+}
+.climate-preview__title em { font-style:normal;color:#efc77f; }
+.climate-preview__sub {
+  max-width:330px;
+  margin:0;
+  color:#c7d5de;
+  font-size:.88rem;
+  line-height:1.55;
+}
+.climate-preview__bottom {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 12px;
+  align-items:center;
+  margin-top:17px;
+  padding-top:12px;
+  border-top:1px solid rgba(239,243,245,.22);
+  color:#d8e1e8;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.climate-preview__bottom span:not(:last-child)::after {
+  content:" ·";
+  color:#e0ba81;
+  padding-left:10px;
+}
+.climate-case-metrics {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin:0 0 8px;
+}
+.climate-case-metric {
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--surface);
+  padding:17px 16px;
+}
+.climate-case-metric strong {
+  display:block;
+  color:#efc77f;
+  font:800 1.7rem/1.1 Manrope,sans-serif;
+}
+.climate-case-metric span {
+  display:block;
+  margin-top:7px;
+  font-size:.82rem;
+  color:var(--muted);
+  line-height:1.45;
+}
+.climate-case-note {
+  border-left:3px solid #dfad6a;
+  padding:15px 18px;
+  border-radius:4px 12px 12px 4px;
+  background:#1a2636;
+  color:var(--muted);
+}
+.climate-case-note strong {color:var(--text)}
+@media (max-width:720px) {
+  .climate-preview {min-height:225px;padding:23px 21px}
+  .climate-preview__title {font-size:1.9rem}
+  .climate-case-metrics {grid-template-columns:1fr}
+}
